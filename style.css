@@ -106,3 +106,61 @@ body div {
   padding: 20px;
   text-align: center;
 }
+
+@media (max-width: 600px) {
+  .enemyselect {
+    margin-bottom: 0px;
+  }
+  .enemyselect img {
+    height: 80px;
+    width: 80px;
+    margin: 0px;
+  }
+
+  .character {
+    margin-top: 0px;
+  }
+  .character img {
+    height: 80px;
+    width: 80px;
+    margin: 2px;
+    border-radius: 50px;
+    border: 1px solid black;
+  }
+  .battledetails {
+    padding: 10px;
+    text-align: center;
+    text-align: center;
+  }
+
+  .scoredetails {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 10px;
+    min-height: 200px;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border: 0.5px solid rgb(228, 228, 228);
+  }
+
+  .lifeCount {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: blue;
+    padding: 0px;
+    justify-content: center;
+  }
+
+  .lifeCount p {
+    padding-right: 10px;
+  }
+
+  .battledetails {
+    padding: 5px;
+    text-align: center;
+    max-width: 600px;
+    text-align: center;
+  }
+}
