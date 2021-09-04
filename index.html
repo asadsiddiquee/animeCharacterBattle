@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Anime Battle</title>
+  </head>
+  <body>
+    <div class="container-fluid platform">
+      <h1 class="title">Anime Character Battle!!!</h1>
+      <button id="beginFight">Restart</button>
+      <div>
+        <h3>Your Enemy</h3>
+        <div class="enemyselect">
+          <img
+            src="https://i.ibb.co/mBFNtTR/asad2.jpg"
+            alt="Waiting for your selection"
+            id="enemyAvatar"
+          />
+        </div>
+      </div>
+
+      <div class="character">
+        <h4 id="selectinstruction">Select Character</h4>
+        <div class="enemyC">
+          <div>
+            <img src="https://i.ibb.co/9rHBpx6/gkkkk.jpg" alt="" id="goku" />
+          </div>
+          <div>
+            <img src="https://i.ibb.co/1Qdgdjs/onep.png" alt="" id="op" />
+          </div>
+          <div>
+            <img src="https://i.ibb.co/48hgK8T/Zen.jpg" alt="" id="zen" />
+          </div>
+        </div>
+      </div>
+
+      <div class="scoredetails">
+        <h4>Round <span id="countR"></span></h4>
+        <div class="lifeCount">
+          <p>Your Lives: <span id="mylife">5</span></p>
+          <p>Enemy's Lives: <span id="enemylife">5</span></p>
+        </div>
+        <div><span id="winloss"></span></div>
+        <div class="battledetails" id="battlesub">
+          The enemy is fully prepared to take you down. enemy is watching you.
+          Choose wisely
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <div>
+      Created by Asad Siddiquee find me out
+      <a href="https://github.com/asadsiddiquee" target="__blank">Github</a>
+    </div>
+  </body>
+</html>

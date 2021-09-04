@@ -1,0 +1,108 @@
+.character img {
+  height: 130px;
+  width: 130px;
+  margin: 0 25px;
+  border-radius: 200px;
+  border: 5px solid black;
+}
+
+.character img:hover {
+  cursor: pointer;
+}
+
+.enemyselect {
+  height: 100px;
+  width: 100px;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+.enemyselect img {
+  height: 100px;
+  width: 100px;
+  margin: 0 25px;
+  border-radius: 200px;
+  border: 5px solid red;
+}
+
+.character div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.character {
+  margin-top: 30px;
+
+  min-width: 60vw;
+}
+
+.enemyC {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title {
+  padding: 10px 30px 50px 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body div {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.scoredetails {
+  font-size: 20px;
+  margin: 20px 0;
+  min-height: 200px;
+  width: 60vw;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  border: 0.5px solid rgb(228, 228, 228);
+}
+
+.lifeCount {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: blue;
+  padding: 0 20px;
+  justify-content: center;
+}
+
+.lifeCount p {
+  padding-right: 30px;
+}
+
+.battledetails {
+  padding: 10px;
+  text-align: center;
+  max-width: 600px;
+  text-align: center;
+}
+
+#beginFight {
+  font-size: 19px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: rgb(223, 218, 218);
+  border: none;
+  margin-bottom: 30px;
+}
+#beginFight:hover {
+  background-color: rgb(159, 159, 185);
+}
+
+#winloss {
+  font-size: 25px;
+  color: red;
+  padding: 20px;
+  text-align: center;
+}
