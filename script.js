@@ -19,9 +19,6 @@ let myLifeCount = 5;
 let enemyLifeCount = 5;
 let countRound = 0;
 
-setInterval(function () {
-  checkfinalScore();
-}, 1500);
 function checkfinalScore() {
   if (myLifeCount == 0) {
     myLife.innerText = 0;
@@ -39,9 +36,22 @@ function checkfinalScore() {
 }
 
 let theGame = (computerSelection, playerSelection) => {
-  checkfinalScore();
-
-  if (computerSelection == 0 && playerSelection == 1) {
+  setInterval(function () {
+    checkfinalScore();
+  }, 1500);
+  if (myLifeCount == 0) {
+    myLife.innerText = 0;
+    winloss.innerText =
+      "Enemy is laughing at you!!! you are totally lost and You don't have any strength left in your body to fight!!! Maybe you should train more!!!";
+    battlesub.innerText = '';
+    return (myLifeCount = 0);
+  } else if (enemyLifeCount == 0) {
+    enemyLife.innerText = 0;
+    winloss.innerText =
+      'You did it! the enemys is totally crushed. he cannot get up anymore. You are totally powerful! although you should train more! because enemy may crush you down next time!';
+    battlesub.innerText = '';
+    return (enemyLifeCount = 0);
+  } else if (computerSelection == 0 && playerSelection == 1) {
     winloss.innerText = 'You Lost!!!!';
     enemyAvatar.src = 'https://i.ibb.co/48hgK8T/Zen.jpg';
     battlesub.innerText =
